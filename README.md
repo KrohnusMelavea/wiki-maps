@@ -11,3 +11,6 @@
 ## wiknode struct format:
 - URL: `std::string`
 - Neighbours: `stl::dynamic_array<wikinode*>`
+
+## Initial Load Procedure:
+- Load all .wikinode files into a `std::unordered_map<std::string, wikinode_staging>` staging map. The key is the node' URL. Assume no changes have been made to the wiki pages during the downtime
